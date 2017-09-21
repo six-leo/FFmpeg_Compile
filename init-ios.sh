@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 #
-# Copyright (C) 2017 Leo Liufu  <@gmail.com>
+# Copyright (C) 2017 Leo Liufu  <lfljjun123@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LEO_FFMPEG_UPSTREAM = https://github.com/six-leo/FFmpeg.git
-LEO_FFMPEG_FORK = https://github.com/six-leo/FFmpeg.git
-LEO_FFMPEG_TAG = n3.3.4
-LEO_FFMPEG_LOCAL_REPO = extra/ffmpeg
+LEO_FFMPEG_UPSTREAM=https://github.com/six-leo/FFmpeg.git
+LEO_FFMPEG_FORK=https://github.com/six-leo/FFmpeg.git
+LEO_FFMPEG_TAG=n3.3.4
+LEO_FFMPEG_LOCAL_REPO=extra/ffmpeg
 
-LEO_GASP_UPSTREAM = https://github.com/six-leo/gas-preprocessor.git
-LEO_GASP_LOCAL_REPO = extra/gas-preprocessor
+LEO_GASP_UPSTREAM=https://github.com/six-leo/gas-preprocessor.git
+LEO_GASP_LOCAL_REPO=extra/gas-preprocessor
 
 FF_ALL_ARCHS_IOS6_SDK="armv7 armv7s i386"
 FF_ALL_ARCHS_IOS7_SDK="armv7 armv7s arm64 i386 x86_64"
