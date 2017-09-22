@@ -22,8 +22,8 @@ LEO_FFMPEG_LOCAL_REPO=extra/ffmpeg
 LEO_GASP_UPSTREAM=https://github.com/six-leo/gas-preprocessor.git
 LEO_GASP_LOCAL_REPO=extra/gas-preprocessor
 
-FF_ALL_ARCHS_IOS11_SDK="armv7 arm64 armv7s"
-FF_ALL_ARCHS=$FF_ALL_ARCHS_IOS11_SDK
+FF_ALL_ARCHS_MAC10_SDK="i386 x86_64"
+FF_ALL_ARCHS=$FF_ALL_ARCHS_MAC10_SDK
 FF_TARGET=$1
 
 set -e
