@@ -29,13 +29,14 @@ sh $TOOLS/pull-repo-base.sh $LEO_OPENSSL_UPSTREAM $LEO_OPENSSL_LOCAL_REPO
 function pull_fork()
 {
     echo "== pull openssl fork $1 =="
-    sh $TOOLS/pull-repo-ref.sh $LEO_OPENSSL_FORK ios/openssl-$1 ${LEO_OPENSSL_LOCAL_REPO}
-    cd ios/openssl-$1
-    git checkout  -B ${JK_OPENSSL_TAG}
+    sh $TOOLS/pull-repo-ref.sh $LEO_OPENSSL_FORK macos/openssl-$1 ${LEO_OPENSSL_LOCAL_REPO}
+    cd macos/openssl-$1
+    git checkout  ${JK_OPENSSL_TAG}
     cd -
 }
 
 
 pull_fork "i386"
 pull_fork "x86_64"
+
 
