@@ -116,6 +116,7 @@ do_lipo_all () {
 #----------
 if [ "$FF_TARGET" = "i386" -o "$FF_TARGET" = "x86_64" ]; then
     echo_archs
+    echo "$ARCH - $FF_TARGET_EXTRA "
     sh tools/do-compile-ffmpeg.sh $FF_TARGET $FF_TARGET_EXTRA
     do_lipo_all
 elif [ "$FF_TARGET" = "lipo" ]; then
@@ -125,6 +126,7 @@ elif [ "$FF_TARGET" = "all" ]; then
     echo_archs
     for ARCH in $FF_ALL_ARCHS
     do
+        echo "$ARCH - $FF_TARGET_EXTRA "
         sh tools/do-compile-ffmpeg.sh $ARCH $FF_TARGET_EXTRA
     done
 
@@ -150,3 +152,4 @@ else
     echo "  compile-ffmpeg.sh check"
     exit 1
 fi
+
