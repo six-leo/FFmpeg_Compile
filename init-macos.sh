@@ -47,8 +47,8 @@ function pull_common() {
 function pull_fork() {
     echo "== pull ffmpeg fork $1 =="
     sh $TOOLS/pull-repo-ref.sh $LEO_FFMPEG_FORK macos/ffmpeg-$1 ${LEO_FFMPEG_LOCAL_REPO}
-    cd macof/ffmpeg-$1
-    git checkout ${LEO_FFMPEG_TAG}
+    cd macos/ffmpeg-$1
+    git checkout -B ${LEO_FFMPEG_TAG}
     cd -
 }
 

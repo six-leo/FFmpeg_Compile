@@ -17,7 +17,7 @@
 
 LEO_OPENSSL_UPSTREAM=https://github.com/six-leo/openssl.git
 LEO_OPENSSL_FORK=https://github.com/six-leo/openssl.git
-LEO_OPENSSL_TAG=master
+LEO_OPENSSL_TAG=OpenSSL_1_0_2-stable
 LEO_OPENSSL_LOCAL_REPO=extra/openssl
 
 set -e
@@ -31,7 +31,7 @@ function pull_fork()
     echo "== pull openssl fork $1 =="
     sh $TOOLS/pull-repo-ref.sh $LEO_OPENSSL_FORK macos/openssl-$1 ${LEO_OPENSSL_LOCAL_REPO}
     cd macos/openssl-$1
-    git checkout  ${JK_OPENSSL_TAG}
+    git checkout -B ${LEO_OPENSSL_TAG}
     cd -
 }
 

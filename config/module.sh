@@ -1,1 +1,1 @@
-mobile-module-default.sh
+macos-module-default.sh
