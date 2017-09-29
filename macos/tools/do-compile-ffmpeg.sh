@@ -38,7 +38,7 @@ FF_BUILD_OPT=$2
 echo "FF_ARCH=$FF_ARCH"
 echo "FF_BUILD_OPT=$FF_BUILD_OPT"
 if [ -z "$FF_ARCH" ]; then
-    echo "You must specific an architecture 'armv7, armv7s, arm64, i386, x86_64, ...'.\n"
+    echo "You must specific an architecture 'i386, x86_64, ...'.\n"
     exit 1
 fi
 
